@@ -12,7 +12,8 @@
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "npm run clean && tsc -p tsconfig.json && node --test dist/test/**/*.test.js",
     "test:chapter-01": "npm run clean && tsc -p tsconfig.json && node --test --test-name-pattern='第01章' dist/test/**/*.test.js",
-    "build": "nuxt build"
+    "build": "nuxt build",
+    "verify": "bash scripts/verify-nuxt-create-error-lab.sh ."
   },
   "dependencies": {
     "h3": "^1.15.1",
