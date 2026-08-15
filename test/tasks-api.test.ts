@@ -20,9 +20,16 @@ test("第01章: titleが空ならNuxtサーバーAPIは400とエラーJSONを返
   const response = await callTasksApi("   ");
 
   assert.equal(response.status, 400);
-  assert.deepEqual(await response.json(), {
-    code: "INVALID_TITLE",
-    message: "titleは空でない文字列で指定してください"
+  const payload = (await response.json()) as {
+    statusCode: number;
+    statusMessage: string;
+    data: { code: string };
+  };
+
+  assert.equal(payload.statusCode, 400);
+  assert.equal(payload.statusMessage, "Invalid title");
+  assert.deepEqual(payload.data, {
+    code: "INVALID_TITLE"
   });
 });
 
