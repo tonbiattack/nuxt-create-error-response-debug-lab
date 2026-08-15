@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-create-error-response-debug-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NuxtサーバーAPIでcreateErrorをreturnして200を返す不具合を再現・修正するTypeScriptデバッグラボ",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist .nuxt .output",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run clean && tsc -p tsconfig.json && node --test dist/test/**/*.test.js",
+    "test:chapter-01": "npm run clean && tsc -p tsconfig.json && node --test --test-name-pattern='第01章' dist/test/**/*.test.js",
+    "build": "nuxt build"
+  },
+  "dependencies": {
+    "h3": "^1.15.1",
+    "nuxt": "3.16.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}

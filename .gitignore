@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.nuxt/
+.output/
+bug-test-output.txt
+coverage/
+.DS_Store
