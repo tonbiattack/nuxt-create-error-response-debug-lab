@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "TypeScript: テストをコンパイル",
+      "type": "npm",
+      "script": "compile:test",
+      "problemMatcher": "$tsc",
+      "group": "build"
+    }
+  ]
+}

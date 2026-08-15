@@ -61,6 +61,7 @@ npm run build
 | [デバッグ記録](docs/debugging-record.md) | 実行結果、原因、修正、制約 |
 | [公式仕様メモ](docs/reference-notes.md) | Nuxt server/apiとcreateErrorの根拠 |
 | [現在の差分](docs/current-diff.md) | 作業ツリーに出ているpackage-lock.jsonの変更内容 |
+| [VS Codeデバッグ手順](docs/vscode-test-debugging.md) | テストをブレークポイントで停止する方法 |
 | [設計メモ](DESIGN.md) | HTTP境界のテストとエラー本文の設計判断 |
 | [対応表](coverage-matrix.md) | 実装済み・未着手テーマの一覧 |
 
